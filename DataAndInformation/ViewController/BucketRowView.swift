@@ -7,12 +7,31 @@
 
 import SwiftUI
 
-struct BucketRowView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct BucketRowView: View
+{
+    var rowBucket: BucketListItem
+    var emoji: String
+    
+    var body: some View
+    {
+        HStack
+        {
+            Spacer()
+            Text(emoji)
+                .font(.largeTitle)
+            Spacer()
+            VStack
+            {
+                Text("Year: \(rowBucket.year)")
+                Text(rowBucket.creature)
+            }
+            .frame(minWidth: 0, maxWidth: .infinity)
+        }
     }
 }
 
-#Preview {
-    BucketRowView()
+#Preview
+{
+    BucketRowView(rowBucket: demoBucket,
+                  emoji: generateRandomEmoji(of: ""))
 }
