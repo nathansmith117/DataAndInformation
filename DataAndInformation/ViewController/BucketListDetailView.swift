@@ -27,7 +27,7 @@ struct BucketListDetailView: View
     }
 }
 
-#Preview
+#Preview ("Detail of a BucketListItem")
 {
     BucketListDetailView(detailedBucket: demoBucket)
 }

@@ -14,5 +14,3 @@ struct BucketListItem : Codable, Identifiable
     var goal: String
     var creature: String
 }
-
-let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", creature: "yo momma")

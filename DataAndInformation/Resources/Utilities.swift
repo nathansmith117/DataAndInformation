@@ -7,6 +7,8 @@
 
 import Foundation
 
+let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", creature: "yo momma")
+
 func randomString() -> String
 {
     let choice = arc4random()

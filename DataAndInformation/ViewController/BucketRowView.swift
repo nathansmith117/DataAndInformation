@@ -30,7 +30,7 @@ struct BucketRowView: View
     }
 }
 
-#Preview
+#Preview ("Bucket Row")
 {
     BucketRowView(rowBucket: demoBucket,
                   emoji: generateRandomEmoji(of: ""))
