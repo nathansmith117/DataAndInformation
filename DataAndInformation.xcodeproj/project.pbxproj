@@ -19,6 +19,7 @@
 		058CE4572AE807FB0088BD7E /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4562AE807FB0088BD7E /* DataView.swift */; };
 		058CE4592AE8082A0088BD7E /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */; };
 		058CE45B2AE808420088BD7E /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE45A2AE808420088BD7E /* BucketRowView.swift */; };
+		058CE45E2AE81E9A0088BD7E /* buckets2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 058CE45D2AE81E9A0088BD7E /* buckets2023.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		058CE4562AE807FB0088BD7E /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
 		058CE45A2AE808420088BD7E /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
+		058CE45D2AE81E9A0088BD7E /* buckets2023.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buckets2023.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		058CE42F2AE802020088BD7E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				058CE45C2AE81E860088BD7E /* Raw Data */,
 				058CE4042AE8018E0088BD7E /* DataAndInformationApp.swift */,
 				058CE4082AE8018F0088BD7E /* Assets.xcassets */,
 				058CE4442AE805530088BD7E /* Utilities.swift */,
@@ -164,6 +167,14 @@
 				058CE4492AE805890088BD7E /* BucketDataStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		058CE45C2AE81E860088BD7E /* Raw Data */ = {
+			isa = PBXGroup;
+			children = (
+				058CE45D2AE81E9A0088BD7E /* buckets2023.json */,
+			);
+			path = "Raw Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			files = (
 				058CE40C2AE8018F0088BD7E /* Preview Assets.xcassets in Resources */,
 				058CE4092AE8018F0088BD7E /* Assets.xcassets in Resources */,
+				058CE45E2AE81E9A0088BD7E /* buckets2023.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,32 @@ import SwiftUI
 
 struct DataView: View
 {
+    @ObservedObject var bucketData = BucketDataStore(buckets: loadJSON(from: "buckets2023"))
+    
     var body: some View
     {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack
+        {
+            VStack
+            {
+                List
+                {
+                    Section("Buckets!")
+                    {
+                        ForEach(bucketData.buckets)
+                        {
+                            bucket in
+                            
+                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-#Preview
+#Preview ("Data View")
 {
     DataView()
 }
