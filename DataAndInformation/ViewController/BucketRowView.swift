@@ -14,18 +14,22 @@ struct BucketRowView: View
     
     var body: some View
     {
-        HStack
+        NavigationLink(destination:
+            BucketListDetailView(detailedBucket: rowBucket))
         {
-            Spacer()
-            Text(emoji)
-                .font(.largeTitle)
-            Spacer()
-            VStack
+            HStack
             {
-                Text("Year: \(rowBucket.year)")
-                Text(rowBucket.creature)
+                Spacer()
+                Text(emoji)
+                    .font(.largeTitle)
+                Spacer()
+                VStack
+                {
+                    Text("Year: \(rowBucket.year)")
+                    Text(rowBucket.creature)
+                }
+                .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .frame(minWidth: 0, maxWidth: .infinity)
         }
     }
 }
