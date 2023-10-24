@@ -16,10 +16,9 @@
 		058CE4452AE805530088BD7E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4442AE805530088BD7E /* Utilities.swift */; };
 		058CE4482AE805760088BD7E /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4472AE805760088BD7E /* BucketListItem.swift */; };
 		058CE44A2AE805890088BD7E /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4492AE805890088BD7E /* BucketDataStore.swift */; };
-		058CE44C2AE805A10088BD7E /* FoodAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE44B2AE805A10088BD7E /* FoodAccess.swift */; };
-		058CE44E2AE805B30088BD7E /* FoodAccessDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE44D2AE805B30088BD7E /* FoodAccessDataStore.swift */; };
-		058CE4502AE807200088BD7E /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE44F2AE807200088BD7E /* DataView.swift */; };
-		058CE4522AE8073B0088BD7E /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4512AE8073B0088BD7E /* BucketListDetailView.swift */; };
+		058CE4572AE807FB0088BD7E /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4562AE807FB0088BD7E /* DataView.swift */; };
+		058CE4592AE8082A0088BD7E /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */; };
+		058CE45B2AE808420088BD7E /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE45A2AE808420088BD7E /* BucketRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +51,9 @@
 		058CE4442AE805530088BD7E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		058CE4472AE805760088BD7E /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		058CE4492AE805890088BD7E /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
-		058CE44B2AE805A10088BD7E /* FoodAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAccess.swift; sourceTree = "<group>"; };
-		058CE44D2AE805B30088BD7E /* FoodAccessDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAccessDataStore.swift; sourceTree = "<group>"; };
-		058CE44F2AE807200088BD7E /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
-		058CE4512AE8073B0088BD7E /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
+		058CE4562AE807FB0088BD7E /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
+		058CE45A2AE808420088BD7E /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +140,9 @@
 		058CE42E2AE801BE0088BD7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				058CE44F2AE807200088BD7E /* DataView.swift */,
-				058CE4512AE8073B0088BD7E /* BucketListDetailView.swift */,
+				058CE4562AE807FB0088BD7E /* DataView.swift */,
+				058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */,
+				058CE45A2AE808420088BD7E /* BucketRowView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,8 +162,6 @@
 			children = (
 				058CE4472AE805760088BD7E /* BucketListItem.swift */,
 				058CE4492AE805890088BD7E /* BucketDataStore.swift */,
-				058CE44B2AE805A10088BD7E /* FoodAccess.swift */,
-				058CE44D2AE805B30088BD7E /* FoodAccessDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,13 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				058CE4052AE8018E0088BD7E /* DataAndInformationApp.swift in Sources */,
-				058CE44C2AE805A10088BD7E /* FoodAccess.swift in Sources */,
 				058CE4452AE805530088BD7E /* Utilities.swift in Sources */,
-				058CE4502AE807200088BD7E /* DataView.swift in Sources */,
+				058CE4572AE807FB0088BD7E /* DataView.swift in Sources */,
+				058CE45B2AE808420088BD7E /* BucketRowView.swift in Sources */,
+				058CE4592AE8082A0088BD7E /* BucketListDetailView.swift in Sources */,
 				058CE44A2AE805890088BD7E /* BucketDataStore.swift in Sources */,
-				058CE4522AE8073B0088BD7E /* BucketListDetailView.swift in Sources */,
 				058CE4482AE805760088BD7E /* BucketListItem.swift in Sources */,
-				058CE44E2AE805B30088BD7E /* FoodAccessDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
