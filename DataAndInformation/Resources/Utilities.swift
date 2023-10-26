@@ -8,26 +8,35 @@
 import Foundation
 
 let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", creature: "yo momma")
+let demoCoffee: CoffeeItem = CoffeeItem(country: "wyoming", year: 2, species: "frog", score: 2.2, color: "purplkjkjl;es")
 
-func loadJSON(from file : String) -> [BucketListItem]
+func loadJSON(from file : String) -> [Any]
 {
-    do
+    if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
     {
-        if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
+        let data = try! Data(contentsOf: dataSourceURL)
+        let decoder = JSONDecoder()
+        
+        do
         {
-            let data = try! Data(contentsOf: dataSourceURL)
-            let decoder = JSONDecoder()
-            
-            let results = try decoder.decode([BucketListItem].self, from: data)
-            return results
+            if (file == "buckets2023")
+            {
+                let results = try decoder.decode([BucketListItem].self, from: data)
+                return results
+            }
+            else if (file == "coffee")
+            {
+                let results = try decoder.decode([CoffeeItem].self, from: data)
+                return results
+            }
+        }
+        catch
+        {
+            print(error.localizedDescription)
         }
     }
-    catch
-    {
-        print(error.localizedDescription)
-    }
     
-    return [BucketListItem]()
+    return []
 }
 
 func randomString() -> String

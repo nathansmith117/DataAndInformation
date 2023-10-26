@@ -36,6 +36,5 @@ struct BucketRowView: View
 
 #Preview ("Bucket Row")
 {
-    BucketRowView(rowBucket: demoBucket,
-                  emoji: generateRandomEmoji(of: ""))
+    BucketRowView(rowBucket: demoBucket, emoji: generateRandomEmoji(of: ""))
 }
