@@ -10,6 +10,9 @@ import Foundation
 let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", creature: "yo momma")
 let demoCoffee: CoffeeItem = CoffeeItem(country: "wyoming", year: 2, species: "frog", score: 2.2, color: "purplkjkjl;es")
 
+let randomURL = Bundle.main.url(forResource: "WhatIsRandom", withExtension: "pdf")!
+
+
 func loadJSON(from file : String) -> [Any]
 {
     if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
