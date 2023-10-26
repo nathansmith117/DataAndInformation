@@ -23,6 +23,8 @@
 		05C384AC2AEAA87600C3BA15 /* coffee.json in Resources */ = {isa = PBXBuildFile; fileRef = 05C384AB2AEAA87600C3BA15 /* coffee.json */; };
 		05C384AE2AEAA8AE00C3BA15 /* CoffeeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384AD2AEAA8AE00C3BA15 /* CoffeeItem.swift */; };
 		05C384B22AEAABA900C3BA15 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */; };
+		05C384B62AEAB41D00C3BA15 /* ufo.json in Resources */ = {isa = PBXBuildFile; fileRef = 05C384B52AEAB41D00C3BA15 /* ufo.json */; };
+		05C384B82AEAB44200C3BA15 /* CoffeeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		05C384AB2AEAA87600C3BA15 /* coffee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coffee.json; sourceTree = "<group>"; };
 		05C384AD2AEAA8AE00C3BA15 /* CoffeeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeItem.swift; sourceTree = "<group>"; };
 		05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailView.swift; sourceTree = "<group>"; };
+		05C384B52AEAB41D00C3BA15 /* ufo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ufo.json; sourceTree = "<group>"; };
+		05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 				058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */,
 				058CE45A2AE808420088BD7E /* BucketRowView.swift */,
 				05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */,
+				05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 		058CE45C2AE81E860088BD7E /* Raw Data */ = {
 			isa = PBXGroup;
 			children = (
+				05C384B52AEAB41D00C3BA15 /* ufo.json */,
 				05C384AB2AEAA87600C3BA15 /* coffee.json */,
 				058CE45D2AE81E9A0088BD7E /* buckets2023.json */,
 			);
@@ -293,6 +299,7 @@
 				058CE40C2AE8018F0088BD7E /* Preview Assets.xcassets in Resources */,
 				058CE4092AE8018F0088BD7E /* Assets.xcassets in Resources */,
 				058CE45E2AE81E9A0088BD7E /* buckets2023.json in Resources */,
+				05C384B62AEAB41D00C3BA15 /* ufo.json in Resources */,
 				05C384AC2AEAA87600C3BA15 /* coffee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +332,7 @@
 				058CE4572AE807FB0088BD7E /* DataView.swift in Sources */,
 				058CE45B2AE808420088BD7E /* BucketRowView.swift in Sources */,
 				058CE4592AE8082A0088BD7E /* BucketListDetailView.swift in Sources */,
+				05C384B82AEAB44200C3BA15 /* CoffeeRowView.swift in Sources */,
 				058CE44A2AE805890088BD7E /* BucketDataStore.swift in Sources */,
 				058CE4482AE805760088BD7E /* BucketListItem.swift in Sources */,
 			);
