@@ -42,7 +42,7 @@ struct DataView: View
                 {
                     Section("Buckets!")
                     {
-                        ForEach(bucketData.buckets)
+                        ForEach(filteredBucketListResults)
                         {
                             bucket in
                             
@@ -51,6 +51,7 @@ struct DataView: View
                         .onDelete(perform: removeBucketItems)
                     }
                 }
+                .searchable(text: $searchedText)
             }
             .padding()
         }
