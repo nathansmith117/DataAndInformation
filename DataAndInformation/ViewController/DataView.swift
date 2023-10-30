@@ -27,9 +27,11 @@ struct DataView: View
                             
                             BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
                         }
+                        .onDelete(perform: removeBucketItems)
                     }
                 }
             }
+            .padding()
         }
     }
     
