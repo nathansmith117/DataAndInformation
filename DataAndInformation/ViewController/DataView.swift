@@ -32,6 +32,11 @@ struct DataView: View
             }
         }
     }
+    
+    private func removeBucketItems(at offsets: IndexSet) -> Void
+    {
+        bucketData.buckets.remove(atOffsets: offsets)
+    }
 }
 
 #Preview ("Data View")
