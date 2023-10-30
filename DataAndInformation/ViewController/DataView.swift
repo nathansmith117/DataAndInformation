@@ -11,6 +11,27 @@ struct DataView: View
 {
     @ObservedObject var bucketData = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
     
+    @State private var searchedText : String = ""
+    
+    private var filteredBucketListResults : [BucketListItem]
+    {
+        if (searchedText.isEmpty)
+        {
+            return bucketData.buckets
+        }
+        else
+        {
+            return bucketData.buckets.filter
+            {
+                $0.goal.lowercased().contains(searchedText.lowercased())
+                ||
+                $0.creature.lowercased().contains(searchedText.lowercased())
+                ||
+                String($0.year) == searchedText
+            }
+        }
+    }
+    
     var body: some View
     {
         NavigationStack
