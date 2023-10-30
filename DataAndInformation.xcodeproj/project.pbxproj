@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05241C9F2AEFF9A900DDB6C9 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05241C9E2AEFF9A900DDB6C9 /* InputField.swift */; };
+		05241CA42AEFFCD800DDB6C9 /* AddBucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05241CA32AEFFCD800DDB6C9 /* AddBucketListItemView.swift */; };
 		058CE4052AE8018E0088BD7E /* DataAndInformationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CE4042AE8018E0088BD7E /* DataAndInformationApp.swift */; };
 		058CE4092AE8018F0088BD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058CE4082AE8018F0088BD7E /* Assets.xcassets */; };
 		058CE40C2AE8018F0088BD7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058CE40B2AE8018F0088BD7E /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		05241C9E2AEFF9A900DDB6C9 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		05241CA32AEFFCD800DDB6C9 /* AddBucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketListItemView.swift; sourceTree = "<group>"; };
 		058CE4012AE8018E0088BD7E /* DataAndInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataAndInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058CE4042AE8018E0088BD7E /* DataAndInformationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndInformationApp.swift; sourceTree = "<group>"; };
 		058CE4082AE8018F0088BD7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05241CA02AEFFC5E00DDB6C9 /* Bucket Views */ = {
+			isa = PBXGroup;
+			children = (
+				058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */,
+				058CE45A2AE808420088BD7E /* BucketRowView.swift */,
+				05241CA32AEFFCD800DDB6C9 /* AddBucketListItemView.swift */,
+			);
+			path = "Bucket Views";
+			sourceTree = "<group>";
+		};
 		058CE3F82AE8018D0088BD7E = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +172,7 @@
 			children = (
 				05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */,
 				058CE4562AE807FB0088BD7E /* DataView.swift */,
-				058CE4582AE8082A0088BD7E /* BucketListDetailView.swift */,
-				058CE45A2AE808420088BD7E /* BucketRowView.swift */,
+				05241CA02AEFFC5E00DDB6C9 /* Bucket Views */,
 				05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */,
 				05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */,
 				05241C9E2AEFF9A900DDB6C9 /* InputField.swift */,
@@ -344,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				058CE4052AE8018E0088BD7E /* DataAndInformationApp.swift in Sources */,
+				05241CA42AEFFCD800DDB6C9 /* AddBucketListItemView.swift in Sources */,
 				058CE4452AE805530088BD7E /* Utilities.swift in Sources */,
 				05C384AE2AEAA8AE00C3BA15 /* CoffeeItem.swift in Sources */,
 				05C384B22AEAABA900C3BA15 /* CoffeeDetailView.swift in Sources */,
