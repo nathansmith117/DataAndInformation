@@ -17,7 +17,7 @@ struct DataAndInformationApp: App
         WindowGroup
         {
             DataView()
-                .environmentObject(storedBuckets);
+                .environmentObject(storedBuckets)
         }
     }
 }
