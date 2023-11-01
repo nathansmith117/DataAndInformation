@@ -11,6 +11,16 @@ import Combine
 class BucketDataStore : ObservableObject
 {
     @Published var buckets : [BucketListItem]
+    {
+        didSet
+        {
+            let encoder = JSONEncoder()
+            if let encodedBuckets = try? encoder.encode(buckets)
+            {
+                UserDefaults.standard.set(encodedBuckets, forKey: "Saved Buckets")
+            }
+        }
+    }
     
     init (buckets : [BucketListItem] = [])
     {
