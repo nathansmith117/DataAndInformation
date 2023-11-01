@@ -67,6 +67,10 @@ struct DataView: View
                 }
             }
         }
+        .sheet(isPresented: $showAddBucketListItem)
+        {
+            AddBucketListItemView(with: "add your name/creature", having: "a goal")
+        }
     }
     
     private func removeBucketItems(at offsets: IndexSet) -> Void
