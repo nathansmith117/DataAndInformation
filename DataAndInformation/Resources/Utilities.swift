@@ -11,7 +11,7 @@ let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", cr
 let demoCoffee: CoffeeItem = CoffeeItem(country: "wyoming", year: 2, species: "frog", score: 2.2, color: "purplkjkjl;es")
 
 let randomURL = Bundle.main.url(forResource: "WhatIsRandom", withExtension: "pdf")!
-
+let dataCollectionURL = Bundle.main.url(forResource: "DataCollectionViolations", withExtension: "pdf")!
 
 func loadJSON(from file : String) -> [Any]
 {

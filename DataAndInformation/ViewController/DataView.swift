@@ -10,9 +10,13 @@ import SwiftUI
 struct DataView: View
 {
     @EnvironmentObject var bucketData : BucketDataStore
+    @ObservedObject var coffeeData : CoffeeDataStore = CoffeeDataStore(coffee: loadJSON(from: "coffee") as! [CoffeeItem])
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItem : Bool = false
+    @State private var canShowBuckets = false
+    @State private var canShowCoffee = false
+    @State private var canShowResearch = false
     
     private var filteredBucketListResults : [BucketListItem]
     {
@@ -39,7 +43,7 @@ struct DataView: View
         {
             List
             {
-                Section("Buckets!")
+                Section("Buckets!", isExpanded: $canShowBuckets)
                 {
                     ForEach(filteredBucketListResults)
                     {
@@ -49,7 +53,22 @@ struct DataView: View
                     }
                     .onDelete(perform: removeBucketItems)
                 }
+                Section("Coffee", isExpanded: $canShowCoffee)
+                {
+                    ForEach(coffeeData.coffee.indices, id: \.self)
+                    {
+                        index in
+                        
+                        CoffeeRowView(rowCoffee: coffeeData.coffee[index], emoji: generateRandomEmoji(of: ""))
+                    }
+                }
+                Section("Research", isExpanded: $canShowResearch)
+                {
+                    NavigationLink("Random", destination: CustomPDFView(url: randomURL))
+                    NavigationLink("Data Collection", destination: CustomPDFView(url: dataCollectionURL))
+                }
             }
+            .listStyle(SidebarListStyle())
             .searchable(text: $searchedText)
             .navigationTitle("Data and Information")
             .toolbar
