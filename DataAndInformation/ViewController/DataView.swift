@@ -82,4 +82,5 @@ struct DataView: View
 #Preview ("Data View")
 {
     DataView()
+        .environmentObject(BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem] ) )
 }
