@@ -12,6 +12,7 @@ struct DataView: View
     @ObservedObject var bucketData = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
     
     @State private var searchedText : String = ""
+    @State private var showAddBucketListItem : Bool = false
     
     private var filteredBucketListResults : [BucketListItem]
     {
@@ -59,7 +60,10 @@ struct DataView: View
                 }
                 ToolbarItem(placement: .topBarTrailing)
                 {
-                    
+                    Button (action: { self.showAddBucketListItem.toggle()} )
+                    {
+                        Image(systemName: "plus")
+                    }
                 }
             }
         }
