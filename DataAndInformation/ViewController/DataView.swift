@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DataView: View
 {
-    @ObservedObject var bucketData = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
+    @EnvironmentObject var bucketData : BucketDataStore
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItem : Bool = false
