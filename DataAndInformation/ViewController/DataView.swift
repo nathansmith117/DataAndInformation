@@ -36,24 +36,32 @@ struct DataView: View
     {
         NavigationStack
         {
-            VStack
+            List
             {
-                List
+                Section("Buckets!")
                 {
-                    Section("Buckets!")
+                    ForEach(filteredBucketListResults)
                     {
-                        ForEach(filteredBucketListResults)
-                        {
-                            bucket in
-                            
-                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
-                        }
-                        .onDelete(perform: removeBucketItems)
+                        bucket in
+                        
+                        BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
                     }
+                    .onDelete(perform: removeBucketItems)
                 }
-                .searchable(text: $searchedText)
             }
-            .padding()
+            .searchable(text: $searchedText)
+            .navigationTitle("Data and Information")
+            .toolbar
+            {
+                ToolbarItem(placement: .topBarLeading)
+                {
+                    EditButton()
+                }
+                ToolbarItem(placement: .topBarTrailing)
+                {
+                    
+                }
+            }
         }
     }
     
