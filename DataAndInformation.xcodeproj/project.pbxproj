@@ -29,6 +29,7 @@
 		05C384B82AEAB44200C3BA15 /* CoffeeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */; };
 		05C384BA2AEABD0D00C3BA15 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */; };
 		05C384BD2AEABDFD00C3BA15 /* WhatIsRandom.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05C384BC2AEABDFD00C3BA15 /* WhatIsRandom.pdf */; };
+		05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRowView.swift; sourceTree = "<group>"; };
 		05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
 		05C384BC2AEABDFD00C3BA15 /* WhatIsRandom.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WhatIsRandom.pdf; sourceTree = "<group>"; };
+		05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +175,7 @@
 				05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */,
 				058CE4562AE807FB0088BD7E /* DataView.swift */,
 				05241CA02AEFFC5E00DDB6C9 /* Bucket Views */,
-				05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */,
-				05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */,
+				05E675552AF2A023003BAEB0 /* Coffee Views */,
 				05241C9E2AEFF9A900DDB6C9 /* InputField.swift */,
 			);
 			path = ViewController;
@@ -196,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				058CE4472AE805760088BD7E /* BucketListItem.swift */,
-				058CE4492AE805890088BD7E /* BucketDataStore.swift */,
+				05E675522AF29F29003BAEB0 /* Datastores */,
 				05C384AD2AEAA8AE00C3BA15 /* CoffeeItem.swift */,
 			);
 			path = Model;
@@ -218,6 +219,24 @@
 				05C384BC2AEABDFD00C3BA15 /* WhatIsRandom.pdf */,
 			);
 			path = PDFs;
+			sourceTree = "<group>";
+		};
+		05E675522AF29F29003BAEB0 /* Datastores */ = {
+			isa = PBXGroup;
+			children = (
+				058CE4492AE805890088BD7E /* BucketDataStore.swift */,
+				05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */,
+			);
+			path = Datastores;
+			sourceTree = "<group>";
+		};
+		05E675552AF2A023003BAEB0 /* Coffee Views */ = {
+			isa = PBXGroup;
+			children = (
+				05C384B12AEAABA900C3BA15 /* CoffeeDetailView.swift */,
+				05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */,
+			);
+			path = "Coffee Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				058CE4052AE8018E0088BD7E /* DataAndInformationApp.swift in Sources */,
+				05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */,
 				05241CA42AEFFCD800DDB6C9 /* AddBucketListItemView.swift in Sources */,
 				058CE4452AE805530088BD7E /* Utilities.swift in Sources */,
 				05C384AE2AEAA8AE00C3BA15 /* CoffeeItem.swift in Sources */,
