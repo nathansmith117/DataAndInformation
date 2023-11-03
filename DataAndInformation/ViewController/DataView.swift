@@ -64,8 +64,8 @@ struct DataView: View
                         index in
                         
                         CoffeeRowView(rowCoffee: coffeeData.coffee[index], emoji: generateRandomEmoji(of: ""))
-                            .accessibilityLabel("Cofee row for coffee of species \(coffeeData.coffee[index].species)")
-                            .accessibilityValue("Cofee row with a score of \(coffeeData.coffee[index].score) from \(coffeeData.coffee[index].country)")
+                            .accessibilityLabel("Coffee row for coffee of species \(coffeeData.coffee[index].species)")
+                            .accessibilityValue("Coffee row with a score of \(coffeeData.coffee[index].score) from \(coffeeData.coffee[index].country)")
                     }
                 }
                 Section("Ufo", isExpanded: $canShowUfo)
@@ -75,12 +75,18 @@ struct DataView: View
                         index in
                         
                         UfoRowView(rowUfo: ufoData.ufos[index], emoji: generateRandomEmoji(of: ""))
+                            .accessibilityLabel("Ufo row for a \(ufoData.ufos[index].shape) shaped ufo")
+                            .accessibilityValue("Ufo with a description of: \(ufoData.ufos[index].description)")
                     }
                 }
                 Section("Research", isExpanded: $canShowResearch)
                 {
                     NavigationLink("Random", destination: CustomPDFView(url: randomURL))
+                        .accessibilityLabel("Link to my pdf on random numbers")
+                        .accessibilityValue("Has information on stuff like true vs pseudo random")
                     NavigationLink("Data Collection", destination: CustomPDFView(url: dataCollectionURL))
+                        .accessibilityLabel("Link to my pdf on data collection")
+                        .accessibilityValue("Has information on stuff like different events caused by data collection")
                 }
             }
             .listStyle(SidebarListStyle())
