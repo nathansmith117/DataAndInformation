@@ -11,11 +11,13 @@ struct DataView: View
 {
     @EnvironmentObject var bucketData : BucketDataStore
     @ObservedObject var coffeeData : CoffeeDataStore = CoffeeDataStore(coffee: loadJSON(from: "coffee") as! [CoffeeItem])
+    @ObservedObject var ufoData : UfoDataStore = UfoDataStore(ufos: loadJSON(from: "ufo") as! [UfoItem])
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItem : Bool = false
     @State private var canShowBuckets = false
     @State private var canShowCoffee = false
+    @State private var canShowUfo = false
     @State private var canShowResearch = false
     
     private var filteredBucketListResults : [BucketListItem]
@@ -64,6 +66,15 @@ struct DataView: View
                         CoffeeRowView(rowCoffee: coffeeData.coffee[index], emoji: generateRandomEmoji(of: ""))
                             .accessibilityLabel("Cofee row for coffee of species \(coffeeData.coffee[index].species)")
                             .accessibilityValue("Cofee row with a score of \(coffeeData.coffee[index].score) from \(coffeeData.coffee[index].country)")
+                    }
+                }
+                Section("Ufo", isExpanded: $canShowUfo)
+                {
+                    ForEach(ufoData.ufos.indices, id: \.self)
+                    {
+                        index in
+                        
+                        UfoRowView(rowUfo: ufoData.ufos[index], emoji: generateRandomEmoji(of: ""))
                     }
                 }
                 Section("Research", isExpanded: $canShowResearch)

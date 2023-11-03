@@ -33,6 +33,11 @@ func loadJSON(from file : String) -> [Any]
                 let results = try decoder.decode([CoffeeItem].self, from: data)
                 return results
             }
+            else if (file == "ufo")
+            {
+                let results = try decoder.decode([UfoItem].self, from: data)
+                return results
+            }
         }
         catch
         {
