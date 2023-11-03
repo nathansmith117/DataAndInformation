@@ -29,6 +29,10 @@
 		05C384B82AEAB44200C3BA15 /* CoffeeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */; };
 		05C384BA2AEABD0D00C3BA15 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */; };
 		05C384BD2AEABDFD00C3BA15 /* WhatIsRandom.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05C384BC2AEABDFD00C3BA15 /* WhatIsRandom.pdf */; };
+		05C3C2432AF53D67002A84FA /* UfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2422AF53D67002A84FA /* UfoItem.swift */; };
+		05C3C2452AF53DD9002A84FA /* UfoDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2442AF53DD9002A84FA /* UfoDataStore.swift */; };
+		05C3C2482AF53E72002A84FA /* UfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2472AF53E72002A84FA /* UfoDetailView.swift */; };
+		05C3C24A2AF53E83002A84FA /* UfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2492AF53E83002A84FA /* UfoRowView.swift */; };
 		05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */; };
 		05E675572AF2A94F003BAEB0 /* DataCollectionViolations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05E675562AF2A94F003BAEB0 /* DataCollectionViolations.pdf */; };
 /* End PBXBuildFile section */
@@ -76,6 +80,10 @@
 		05C384B72AEAB44200C3BA15 /* CoffeeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRowView.swift; sourceTree = "<group>"; };
 		05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
 		05C384BC2AEABDFD00C3BA15 /* WhatIsRandom.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WhatIsRandom.pdf; sourceTree = "<group>"; };
+		05C3C2422AF53D67002A84FA /* UfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoItem.swift; sourceTree = "<group>"; };
+		05C3C2442AF53DD9002A84FA /* UfoDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoDataStore.swift; sourceTree = "<group>"; };
+		05C3C2472AF53E72002A84FA /* UfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoDetailView.swift; sourceTree = "<group>"; };
+		05C3C2492AF53E83002A84FA /* UfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoRowView.swift; sourceTree = "<group>"; };
 		05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDataStore.swift; sourceTree = "<group>"; };
 		05E675562AF2A94F003BAEB0 /* DataCollectionViolations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DataCollectionViolations.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +182,7 @@
 		058CE42E2AE801BE0088BD7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				05C3C2462AF53E5E002A84FA /* Ufo Views */,
 				05C384B92AEABD0D00C3BA15 /* CustomPDFView.swift */,
 				058CE4562AE807FB0088BD7E /* DataView.swift */,
 				05241CA02AEFFC5E00DDB6C9 /* Bucket Views */,
@@ -201,6 +210,7 @@
 				058CE4472AE805760088BD7E /* BucketListItem.swift */,
 				05E675522AF29F29003BAEB0 /* Datastores */,
 				05C384AD2AEAA8AE00C3BA15 /* CoffeeItem.swift */,
+				05C3C2422AF53D67002A84FA /* UfoItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,11 +234,21 @@
 			path = PDFs;
 			sourceTree = "<group>";
 		};
+		05C3C2462AF53E5E002A84FA /* Ufo Views */ = {
+			isa = PBXGroup;
+			children = (
+				05C3C2472AF53E72002A84FA /* UfoDetailView.swift */,
+				05C3C2492AF53E83002A84FA /* UfoRowView.swift */,
+			);
+			path = "Ufo Views";
+			sourceTree = "<group>";
+		};
 		05E675522AF29F29003BAEB0 /* Datastores */ = {
 			isa = PBXGroup;
 			children = (
 				058CE4492AE805890088BD7E /* BucketDataStore.swift */,
 				05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */,
+				05C3C2442AF53DD9002A84FA /* UfoDataStore.swift */,
 			);
 			path = Datastores;
 			sourceTree = "<group>";
@@ -381,15 +401,19 @@
 				05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */,
 				05241CA42AEFFCD800DDB6C9 /* AddBucketListItemView.swift in Sources */,
 				058CE4452AE805530088BD7E /* Utilities.swift in Sources */,
+				05C3C2432AF53D67002A84FA /* UfoItem.swift in Sources */,
 				05C384AE2AEAA8AE00C3BA15 /* CoffeeItem.swift in Sources */,
+				05C3C24A2AF53E83002A84FA /* UfoRowView.swift in Sources */,
 				05C384B22AEAABA900C3BA15 /* CoffeeDetailView.swift in Sources */,
 				058CE4572AE807FB0088BD7E /* DataView.swift in Sources */,
 				058CE45B2AE808420088BD7E /* BucketRowView.swift in Sources */,
+				05C3C2482AF53E72002A84FA /* UfoDetailView.swift in Sources */,
 				058CE4592AE8082A0088BD7E /* BucketListDetailView.swift in Sources */,
 				05C384B82AEAB44200C3BA15 /* CoffeeRowView.swift in Sources */,
 				058CE44A2AE805890088BD7E /* BucketDataStore.swift in Sources */,
 				05C384BA2AEABD0D00C3BA15 /* CustomPDFView.swift in Sources */,
 				058CE4482AE805760088BD7E /* BucketListItem.swift in Sources */,
+				05C3C2452AF53DD9002A84FA /* UfoDataStore.swift in Sources */,
 				05241C9F2AEFF9A900DDB6C9 /* InputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

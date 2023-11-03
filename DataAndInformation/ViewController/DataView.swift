@@ -50,6 +50,8 @@ struct DataView: View
                         bucket in
                         
                         BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
+                            .accessibilityLabel("Bucket Row for \(bucket.creature)")
+                            .accessibilityValue("Bucket Row for \(bucket.goal) in \(bucket.year)")
                     }
                     .onDelete(perform: removeBucketItems)
                 }
@@ -60,6 +62,8 @@ struct DataView: View
                         index in
                         
                         CoffeeRowView(rowCoffee: coffeeData.coffee[index], emoji: generateRandomEmoji(of: ""))
+                            .accessibilityLabel("Cofee row for coffee of species \(coffeeData.coffee[index].species)")
+                            .accessibilityValue("Cofee row with a score of \(coffeeData.coffee[index].score) from \(coffeeData.coffee[index].country)")
                     }
                 }
                 Section("Research", isExpanded: $canShowResearch)

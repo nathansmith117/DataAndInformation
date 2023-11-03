@@ -15,8 +15,8 @@ struct CustomPDFView: View
     var body: some View
     {
         PDFKitRepresentedView(documentURL: url)
-            .accessibilityLabel("")
-            .accessibilityValue("")
+            .accessibilityLabel("PDf of the supplided URL \(url.description)")
+            .accessibilityValue("Contents of PDF at URL")
     }
 }
 

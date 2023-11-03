@@ -9,6 +9,7 @@ import Foundation
 
 let demoBucket: BucketListItem = BucketListItem(year: 2000, goal: "do stuff", creature: "yo momma")
 let demoCoffee: CoffeeItem = CoffeeItem(country: "wyoming", year: 2, species: "frog", score: 2.2, color: "purplkjkjl;es")
+let demoUfo: UfoItem = UfoItem(latitude: -100.2, longitude: 2.453, shape: "chungus", description: "flying cat head shooting lasers out of its eyes", year: 2029)
 
 let randomURL = Bundle.main.url(forResource: "WhatIsRandom", withExtension: "pdf")!
 let dataCollectionURL = Bundle.main.url(forResource: "DataCollectionViolations", withExtension: "pdf")!
