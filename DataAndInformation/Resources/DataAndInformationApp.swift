@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct DataAndInformationApp: App
 {
-    @State private var storedBuckets = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
+    @StateObject private var storedBuckets = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
     
     
     var body: some Scene

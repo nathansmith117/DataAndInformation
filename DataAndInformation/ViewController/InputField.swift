@@ -16,11 +16,14 @@ struct InputField: View
     
     var body: some View
     {
-        Text(title)
-            .font(.headline)
-            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-        TextField(hint, text: $result)
-            .autocorrectionDisabled()
+        VStack
+        {
+            Text(title)
+                .font(.headline)
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+            TextField(hint, text: $result)
+                .autocorrectionDisabled()
+        }
     }
 }
 
