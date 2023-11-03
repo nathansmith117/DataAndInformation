@@ -13,13 +13,17 @@ struct UfoDetailView: View
     
     var body: some View
     {
-       VStack
-        {
-            Text("Latitude: \(detailedUfo.latitude)")
-            Text("longitude: \(detailedUfo.longitude)")
-            Text("Shape: \(detailedUfo.shape)")
-            Text("Description: \(detailedUfo.description)")
-            Text("Year: \(detailedUfo.year)")
+        ZStack{
+            Image("pyramids")
+                .resizable()
+            VStack
+            {
+                Text("Latitude: \(detailedUfo.latitude)")
+                Text("longitude: \(detailedUfo.longitude)")
+                Text("Shape: \(detailedUfo.shape)")
+                Text("Description: \(detailedUfo.description)")
+                Text("Year: \(detailedUfo.year)")
+            }
         }
     }
 }
