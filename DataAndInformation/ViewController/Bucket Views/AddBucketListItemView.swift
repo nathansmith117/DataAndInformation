@@ -27,7 +27,11 @@ struct AddBucketListItemView: View
             Section("Make a new BucketListItem")
             {
                 InputField(title: "Creature Who Made it!", hint: "creature", result: $author)
+                    .accessibilityLabel("Input for the creature creating the bucket list item")
+                    .accessibilityValue("Put your name, your pets name, favorite mythical creature...");
                 InputField(title: "Goal", hint: "What do you wanno do?", result: $bucketListItem)
+                    .accessibilityLabel("Input for your goal")
+                    .accessibilityValue("Put your goal")
             }
             if (!author.isEmpty && !bucketListItem.isEmpty)
             {

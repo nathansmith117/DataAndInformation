@@ -26,7 +26,11 @@ struct BucketRowView: View
                 VStack
                 {
                     Text("Year: \(rowBucket.year)")
+                        .accessibilityLabel("Bucket list item year")
+                        .accessibilityValue("Bucket list item added on year \(rowBucket.year)")
                     Text(rowBucket.creature)
+                        .accessibilityLabel("Bucket list item creature")
+                        .accessibilityValue("The bucket list item creature is a \(rowBucket.creature)")
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
             }

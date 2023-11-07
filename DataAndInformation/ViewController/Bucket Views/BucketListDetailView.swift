@@ -13,16 +13,17 @@ struct BucketListDetailView: View
     
     var body: some View
     {
-        Color.orange
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         VStack
         {
             Text("Year: \(detailedBucket.year)")
+                .accessibilityLabel("The year the bucket list item was added")
+                .accessibilityValue("Bucket list item added on the year \(detailedBucket.year)")
             Text(detailedBucket.creature)
-            Image("turtle bucket")
-                .resizable()
-                .scaledToFit()
+                .accessibilityLabel("The creature that added the bucket list item")
+                .accessibilityValue("The creature is a \(detailedBucket.creature)")
             Text(detailedBucket.goal)
+                .accessibilityLabel("The goal on the bucket list item")
+                .accessibilityValue("The goal is: \(detailedBucket.goal)")
         }
     }
 }
