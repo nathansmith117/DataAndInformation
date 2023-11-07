@@ -13,7 +13,8 @@ struct UfoDetailView: View
     
     var body: some View
     {
-        ZStack{
+        ZStack
+        {
             Image("pyramids")
                 .resizable()
             VStack
