@@ -23,10 +23,11 @@ struct UfoDetailView: View
                 {
                     Text("Latitude: \(detailedUfo.latitude)")
                     Text("longitude: \(detailedUfo.longitude)")
+                    NavigationLink("Map", destination: UfoMapView(ufo: detailedUfo))
+                    Text("") // For a bit of extra space (:
                     Text("Shape: \(detailedUfo.shape)")
                     Text("Description: \(detailedUfo.description)")
                     Text("Year: \(detailedUfo.year)")
-                    NavigationLink("Map", destination: UfoMapView(ufo: detailedUfo))
                 }
             }
         }
