@@ -15,6 +15,8 @@ struct BucketListDetailView: View
     {
         VStack
         {
+            Image("Buckethead")
+                .resizable()
             Text("Year: \(detailedBucket.year)")
                 .accessibilityLabel("The year the bucket list item was added")
                 .accessibilityValue("Bucket list item added on the year \(detailedBucket.year)")
