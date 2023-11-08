@@ -20,10 +20,10 @@ struct BucketListDetailView: View
             Text("Year: \(detailedBucket.year)")
                 .accessibilityLabel("The year the bucket list item was added")
                 .accessibilityValue("Bucket list item added on the year \(detailedBucket.year)")
-            Text(detailedBucket.creature)
+            Text("Creature: \(detailedBucket.creature)")
                 .accessibilityLabel("The creature that added the bucket list item")
                 .accessibilityValue("The creature is a \(detailedBucket.creature)")
-            Text(detailedBucket.goal)
+            Text("Goal: \(detailedBucket.goal)")
                 .accessibilityLabel("The goal on the bucket list item")
                 .accessibilityValue("The goal is: \(detailedBucket.goal)")
         }
