@@ -33,6 +33,7 @@
 		05C3C2452AF53DD9002A84FA /* UfoDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2442AF53DD9002A84FA /* UfoDataStore.swift */; };
 		05C3C2482AF53E72002A84FA /* UfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2472AF53E72002A84FA /* UfoDetailView.swift */; };
 		05C3C24A2AF53E83002A84FA /* UfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3C2492AF53E83002A84FA /* UfoRowView.swift */; };
+		05D90E122AFBDDEF003AA9CC /* UfoMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D90E112AFBDDEF003AA9CC /* UfoMapView.swift */; };
 		05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */; };
 		05E675572AF2A94F003BAEB0 /* DataCollectionViolations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05E675562AF2A94F003BAEB0 /* DataCollectionViolations.pdf */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		05C3C2442AF53DD9002A84FA /* UfoDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoDataStore.swift; sourceTree = "<group>"; };
 		05C3C2472AF53E72002A84FA /* UfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoDetailView.swift; sourceTree = "<group>"; };
 		05C3C2492AF53E83002A84FA /* UfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoRowView.swift; sourceTree = "<group>"; };
+		05D90E112AFBDDEF003AA9CC /* UfoMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UfoMapView.swift; sourceTree = "<group>"; };
 		05E675532AF29F53003BAEB0 /* CoffeeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDataStore.swift; sourceTree = "<group>"; };
 		05E675562AF2A94F003BAEB0 /* DataCollectionViolations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DataCollectionViolations.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +241,7 @@
 			children = (
 				05C3C2472AF53E72002A84FA /* UfoDetailView.swift */,
 				05C3C2492AF53E83002A84FA /* UfoRowView.swift */,
+				05D90E112AFBDDEF003AA9CC /* UfoMapView.swift */,
 			);
 			path = "Ufo Views";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D90E122AFBDDEF003AA9CC /* UfoMapView.swift in Sources */,
 				058CE4052AE8018E0088BD7E /* DataAndInformationApp.swift in Sources */,
 				05E675542AF29F53003BAEB0 /* CoffeeDataStore.swift in Sources */,
 				05241CA42AEFFCD800DDB6C9 /* AddBucketListItemView.swift in Sources */,
