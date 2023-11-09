@@ -13,23 +13,15 @@ struct CoffeeDetailView: View
     
     var body: some View
     {
-        ZStack
+        VStack
         {
             Image("pepeCoffee")
                 .resizable()
-            VStack
-            {
-                Text("Country: \(detailedCoffee.country)")
-                    .colorInvert()
-                Text("Year: \(detailedCoffee.year)")
-                    .colorInvert()
-                Text("Species: \(detailedCoffee.species)")
-                    .colorInvert()
-                Text("Score: \(detailedCoffee.score)")
-                    .colorInvert()
-                Text("Color: \(detailedCoffee.color)")
-                    .colorInvert()
-        }
+            Text("Country: \(detailedCoffee.country)")
+            Text("Year: \(detailedCoffee.year)")
+            Text("Species: \(detailedCoffee.species)")
+            Text("Score: \(detailedCoffee.score)")
+            Text("Color: \(detailedCoffee.color)")
         }
     }
 }
