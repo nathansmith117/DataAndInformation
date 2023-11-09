@@ -19,10 +19,7 @@ struct UfoDetailView: View
             {
                 Image("pyramids")
                     .resizable()
-                Text("Latitude: \(detailedUfo.latitude)")
-                Text("longitude: \(detailedUfo.longitude)")
-                NavigationLink("Map", destination: UfoMapView(ufo: detailedUfo))
-                Text("") // For a bit of extra space (:
+                NavigationLink("Click for map", destination: UfoMapView(ufo: detailedUfo))
                 Text("Shape: \(detailedUfo.shape)")
                 Text("Description: \(detailedUfo.description)")
                 Text("Year: \(detailedUfo.year)")
