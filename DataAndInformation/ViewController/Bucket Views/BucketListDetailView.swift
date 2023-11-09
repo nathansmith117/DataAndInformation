@@ -17,7 +17,7 @@ struct BucketListDetailView: View
         {
             Image("Buckethead")
                 .resizable()
-            Text("Year: \(detailedBucket.year)")
+            Text("Year: \(String(detailedBucket.year))")
                 .accessibilityLabel("The year the bucket list item was added")
                 .accessibilityValue("Bucket list item added on the year \(detailedBucket.year)")
             Text("Creature: \(detailedBucket.creature)")

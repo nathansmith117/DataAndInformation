@@ -23,7 +23,7 @@ struct UfoRowView: View
                 Spacer()
                 VStack
                 {
-                    Text("Year: \(rowUfo.year)")
+                    Text("Year: \(String(rowUfo.year))")
                     Text("Shape: \(rowUfo.shape)")
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)

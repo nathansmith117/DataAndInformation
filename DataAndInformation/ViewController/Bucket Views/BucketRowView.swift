@@ -25,7 +25,7 @@ struct BucketRowView: View
                 Spacer()
                 VStack
                 {
-                    Text("Year: \(rowBucket.year)")
+                    Text("Year: \(String(rowBucket.year))")
                         .accessibilityLabel("Bucket list item year")
                         .accessibilityValue("Bucket list item added on year \(rowBucket.year)")
                     Text(rowBucket.creature)

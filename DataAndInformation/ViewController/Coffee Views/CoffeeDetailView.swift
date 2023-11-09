@@ -18,7 +18,7 @@ struct CoffeeDetailView: View
             Image("pepeCoffee")
                 .resizable()
             Text("Country: \(detailedCoffee.country)")
-            Text("Year: \(detailedCoffee.year)")
+            Text("Year: \(String(detailedCoffee.year))")
             Text("Species: \(detailedCoffee.species)")
             Text("Score: \(detailedCoffee.score)")
             Text("Color: \(detailedCoffee.color)")

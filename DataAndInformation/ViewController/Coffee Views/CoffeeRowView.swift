@@ -23,7 +23,7 @@ struct CoffeeRowView: View
                 Spacer()
                 VStack
                 {
-                    Text("Year: \(rowCoffee.year)")
+                    Text("Year: \(String(rowCoffee.year))")
                     Text(rowCoffee.species)
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)

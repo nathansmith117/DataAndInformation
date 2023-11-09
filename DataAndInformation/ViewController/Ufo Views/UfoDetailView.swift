@@ -22,7 +22,7 @@ struct UfoDetailView: View
                 NavigationLink("Click for map", destination: UfoMapView(ufo: detailedUfo))
                 Text("Shape: \(detailedUfo.shape)")
                 Text("Description: \(detailedUfo.description)")
-                Text("Year: \(detailedUfo.year)")
+                Text("Year: \(String(detailedUfo.year))")
             }
         }
     }
